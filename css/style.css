@@ -35,14 +35,11 @@ header {
 
 /* SPECIFIC STYLES */
 #headerContent {
-  align-items: center;
-  display: flex;
   height: 100px;
-  justify-content: center;
 }
 
 .bigCap {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 /* HELPERS + TACHYONS OVERWRITES */
@@ -53,17 +50,22 @@ header {
 .color-tertiary { color: #BD798F; }
 .color-white { color: #F2F3F7; }
 
-.offset-outline1 {
-  /* outline-color: #9F8261;
-  outline-offset: 4px;
-  outline-style: solid;
-  outline-width: 1px; */
-  border: 2px solid #9F8261;
-  padding: 2px;
-}
-
 .fg1 {
   flex-grow: 1;
 }
 
 /* MEDIA QUERIES */
+@media only screen and (min-width: 30rem) {
+  .offset-outline1 {
+    /* outline-color: #9F8261;
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 1px; */
+    border: 2px solid #9F8261;
+    padding: 2px;
+  }
+
+  .bigCap {
+    font-size: 6rem;
+  }
+}

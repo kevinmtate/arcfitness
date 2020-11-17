@@ -5,15 +5,61 @@
   <meta charset="UTF-8">
   <meta name="description" content="Alyssa Rose Caruba Fitness">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
   <link rel="stylesheet" href="css/style.css">
+  <!-- https://github.com/cferdinandi/smooth-scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
-<body>
-  <h1>Welcome to ARC Fitness</h1>
-  <h2>Your trainer: Alyssa Caruba</h2>
+<body class="bgc-white">
+  <header class="fixed w-100 top-0 left-0 z-5">
+    <div id="headerContent" class="ph5">
+      <h1 class="ttu f2 color-primary fw7 mr6">Alyssa Caruba</h1>
+      <nav class="f4">
+        <ul class="flex">
+          <li class="ph3">
+            <a href="#home" class="navLink color-primary">
+              Home
+            </a>
+          </li>
+          <li class="ph3">
+            <a href="#register" class="navLink color-primary">
+              Register
+            </a>
+          </li>
+          <li class="ph3">
+            <a href="#bio" class="navLink color-primary">
+              Bio
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="relative">
+    <section id="home" class="flex justify-center items-center mb5">
+      <img class="offset-outline1" src="./media/IMG_0283.JPG" alt="" width="500">
+      <div class="ml6">
+        <h2 class="f1 ttu">
+          <div class="mb4 color-primary"><span class="bigCap mr3 color-secondary fw7">A</span>lyssa</div>
+          <div class="mb4 color-primary"><span class="bigCap mr3 color-secondary fw7">R</span>ose</div>
+          <div class="mb4 color-primary"><span class="bigCap mr3 color-secondary fw7">C</span>aruba</div>
+          <div class="mb4 color-secondary"><span class="bigCap fw7">Fitness</span></div>
+        </h2>
+        <a href="#register" class="color-primary bb f4">Sign up for this weeks class</a>
+      </div>
+    </section>
+    <section id="register" class="flex justify-center items-center mb5">
+      <div class="mr6 f3">
+        <a href="" class="color-primary bb f2">REGISTRATION FORM WILL GO HERE</a>
+      </div>
+      <img class="offset-outline1" src="./media/IMG_3388.JPG" alt="" width="1000">
+    </section>
+    <section id="bio" class="">
+      bio
+    </section>
+  </main>
 
-  <script src="script.js" />
+  <script src="script.js"></script>
 </body>
 </html>

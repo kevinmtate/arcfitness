@@ -1,0 +1,65 @@
+/*
+ * COLORS:
+ * primary: #1B415F
+ * secondary: #9F8261
+ * tertiary: #BD798F
+ * white: #F2F3F7
+ */
+
+/* RESETS */
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #BD798F;
+  transition: .15s;
+}
+
+/* SEMANTIC DEFAULTS */
+main {
+  margin-top: 100px;
+}
+
+header {
+  transition: all .25s;
+}
+
+/* SPECIFIC STYLES */
+#headerContent {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.bigCap {
+  font-size: 6rem;
+}
+
+/* HELPERS + TACHYONS OVERWRITES */
+.bgc-primary { background-color: #1B415F; }
+.bgc-white { background-color: #F2F3F7; }
+.color-primary { color: #1B415F; }
+.color-secondary { color: #9F8261; }
+.color-tertiary { color: #BD798F; }
+.color-white { color: #F2F3F7; }
+
+.offset-outline1 {
+  /* outline-color: #9F8261;
+  outline-offset: 4px;
+  outline-style: solid;
+  outline-width: 1px; */
+  border: 2px solid #9F8261;
+  padding: 2px;
+}
+
+.fg1 {
+  flex-grow: 1;
+}
+
+/* MEDIA QUERIES */

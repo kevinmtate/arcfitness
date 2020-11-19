@@ -42,6 +42,10 @@ header {
   font-size: 4rem;
 }
 
+#signUpForm {
+  width: 100%;
+}
+
 /* HELPERS + TACHYONS OVERWRITES */
 .bgc-primary { background-color: #1B415F; }
 .bgc-white { background-color: #F2F3F7; }
@@ -67,5 +71,15 @@ header {
 
   .bigCap {
     font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 60rem) {
+  .mw75-l {
+    max-width: 75%;
+  }
+
+  #signUpForm {
+    width: 500px;
   }
 }

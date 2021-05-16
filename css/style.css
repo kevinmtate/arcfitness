@@ -1,17 +1,18 @@
 /*
  * COLORS:
- * primary: #1B415F
- * secondary: #9F8261
- * tertiary: #BD798F
+ * primary: #6F2EE8
+ * secondary: #000000
+ * tertiary: #FFFFFF
  * white: #F2F3F7
  */
 
 /* RESETS */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Ubuntu", serif;
 }
 
 h1 {
+  font-family: 'Calligraffitti', cursive;
   margin: 0;
 }
 
@@ -20,7 +21,7 @@ a {
 }
 
 a:hover {
-  color: #BD798F;
+  color: #6F2EE8;
   transition: .15s;
 }
 
@@ -34,7 +35,7 @@ header {
 }
 
 /* SPECIFIC STYLES */
-#headerContent {
+.headerContent {
   height: 100px;
 }
 
@@ -42,33 +43,39 @@ header {
   font-size: 4rem;
 }
 
-#signUpForm {
-  width: 100%;
+.ph-caret-down-bold {
+  font-size: 80px
+}
+
+.gallery-image {
+  width: 375px;
 }
 
 /* HELPERS + TACHYONS OVERWRITES */
 .bgc-primary { background-color: #1B415F; }
+.bgc-secondary { background-color: #000000; }
 .bgc-white { background-color: #F2F3F7; }
-.color-primary { color: #1B415F; }
-.color-secondary { color: #9F8261; }
-.color-tertiary { color: #BD798F; }
+.color-primary { color: #6F2EE8; }
+.color-secondary { color: #000000; }
+.color-tertiary { color: #FFFFFF; }
 .color-white { color: #F2F3F7; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 .5rem;
+}
 
 .fg1 {
   flex-grow: 1;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 30rem) {
-  .offset-outline1 {
-    /* outline-color: #9F8261;
-    outline-offset: 4px;
-    outline-style: solid;
-    outline-width: 1px; */
-    border: 2px solid #9F8261;
-    padding: 2px;
-  }
-
   .bigCap {
     font-size: 6rem;
   }

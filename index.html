@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <!-- https://github.com/cferdinandi/smooth-scroll -->
@@ -16,68 +17,90 @@
   <!-- https://phosphoricons.com/ -->
   <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
-<body class="bgc-white">
+<body id="home" class="bgc-white">
   <header class="fixed w-100 top-0 left-0 z-5">
-    <div id="headerContent" class="flex flex-column flex-row-ns items-center justify-center ph5-ns tracked">
-      <div class="mr6-ns flex items-center">
-        <h1 class="ttu f3 f2-ns color-primary fw7 tracked-mega mr3">Alyssa Carrubba</h1>
-        <a href="https://www.instagram.com/alyssacarrubba/?igshid=1d6atk557ww5p" class="navLink color-primary" target="_blank" rel="noopener noreferrer">
-          <i class="ph-instagram-logo-bold ph-2x"></i>
-        </a>
-      </div>
+    <div class="headerContent flex flex-column flex-row-ns items-center justify-between">
+      <a href="http://www.alyssacarrubbafit.com/" class="h-100">
+        <img src="media/arc_fitness-logo.jpg" alt="Arc Fitness logo" height="100%" />
+      </a>
       <nav class="">
-        <ul class="flex items-center f5 mt3 mt0-ns">
+        <ul class="flex items-center f4 mt3 mt0-ns ttu b tracked">
           <li class="ph3-ns ph2">
-            <a href="#home" class="navLink color-primary">
+            <a href="#home" class="navLink color-secondary">
               Home
             </a>
           </li>
           <li class="ph3-ns ph2">
-            <a href="#register" class="navLink color-primary">
-              Register
+            <a href="#about" class="navLink color-secondary">
+              About
             </a>
           </li>
           <li class="ph3-ns ph2">
-            <a href="#bio" class="navLink color-primary">
-              Bio (coming soon)
+            <a href="#gallery" class="navLink color-secondary">
+              Gallery
             </a>
           </li>
         </ul>
       </nav>
+      <div class="mr2">
+        <!-- <span>by</span> -->
+        <h1 class="color-secondary tracked f3 lh-title">
+          <span class="color-primary b">A</span>lyssa<br/><span class="color-primary b">R</span>ose<br/><span class="color-primary b">C</span>arrubba
+        </h1>
+      </div>
     </div>
   </header>
   <main class="relative">
-    <section id="home" class="flex justify-center items-center mb5 flex-column flex-row-l w-100">
-      <img class="offset-outline1" src="./media/IMG_0283.JPG" alt="" width="500">
-      <div class="ml6-ns mt4 mt0-ns">
-        <h2 class="f3 f1-ns ttu">
-          <div class="mb4 color-primary"><span class="bigCap mr3 color-secondary fw7">A</span>lyssa</div>
-          <div class="mb4 color-primary"><span class="bigCap mr3 color-secondary fw7">R</span>ose</div>
-          <div class="mb4 color-primary"><span class="bigCap mr3 color-secondary fw7">C</span>arrubba</div>
-          <div class="mb4 color-secondary"><span class="bigCap fw7 tracked tracked-mega-ns">Fitness</span></div>
-        </h2>
-        <a href="#register" class="color-primary bb f4">Sign up for this weeks class</a>
+    <section class="flex justify-center items-center flex-column">
+      <img src="./media/arc_fitness-hero.jpg" alt="">
+    </section>
+    <section id="about" class="pv4 pv6-ns">
+      <div class="container">
+        <p class="ttc f4 tracked lh-copy">
+          Hi, my name is Alyssa Carrubba and I am a fitness instructor, movement coach, and music enthusiast. By pairing compelling music with dynamic movement, I create an energetic atmosphere that allows students to feel powerful.
+          <br/><br/>
+          I am forming a community of those seeking connection, motivation and purpose. Through vigorous exercises performed to the beat of music, students feel strong and better connected to themselves and those around them.
+          <br/><br/>
+          My class promotes full-body strength training, muscle toning, and cardio health. I make students feel seen through my commitment to developing collective strength and fostering connection and community united through music and movement.
+        </p>
       </div>
     </section>
-    <section id="register" class="flex justify-around items-center mb5 flex-column flex-row-reverse-l w-100">
-      <img class="offset-outline1 mw75-l" src="./media/IMG_3388.JPG" alt="" width="1000">
-      <div id="signUpForm" class="f3 ph4-m ph1 mt5 mt0-l">
-        <h3 class="f4 tc mb2 color-primary fw7 lh-copy">Sign up below & Venmo<br/><span class="color-tertiary underline">@Alyssa-Carrubba</span><br/>$15 to secure your spot!</h3>
-        <a name="form895130702" id="formAnchor895130702"></a>
-        <script src="https://fs4.formsite.com/include/form/embedManager.js?895130702"></script>
-        <script>
-          EmbedManager.embed({
-            key: "https://fs4.formsite.com/res/showFormEmbed?EParam=PyBo85CFjhEOoHLWmDD7mK_3bsAv-gQi&895130702",
-            width: "100%"
-          });
-        </script>
+    <section id="gallery" class="container">
+      <div class="pv5">
+        <div class=" flex flex-wrap items-center justify-center pv5">
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-1.jpg" alt="" />
+          </div>
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-3.jpg" alt="" />
+          </div>
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-5.jpg" alt="" />
+          </div>
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-6.jpg" alt="" />
+          </div>
+        </div>
+        <div class=" flex flex-wrap items-center justify-center pv5">
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-7.jpg" alt="" />
+          </div>
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-8.jpg" alt="" />
+          </div>
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-9.jpg" alt="" />
+          </div>
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-10.jpg" alt="" />
+          </div>
+          <div class="gallery-image mh3 mv3">
+            <img src="media/arc_fitness-11.jpg" alt="" />
+          </div>
+        </div>
       </div>
-    </section>
-    <section id="bio" class="">
-      
     </section>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>

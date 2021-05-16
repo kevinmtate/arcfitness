@@ -6,11 +6,11 @@
 
     document.addEventListener("scroll", function() {
       if (window.pageYOffset) {
-        headerEl.classList.add('bgc-primary');
+        headerEl.classList.add('bgc-secondary');
         h1El.classList.add('color-white');
         navItems.forEach(function(el) { el.classList.add('color-white')})
       } else {
-        headerEl.classList.remove('bgc-primary');
+        headerEl.classList.remove('bgc-secondary');
         h1El.classList.remove('color-white');
         navItems.forEach(function(el) { el.classList.remove('color-white')})
       }

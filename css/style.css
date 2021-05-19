@@ -7,6 +7,7 @@
  */
 
 /* RESETS */
+html, body { height: 100%; }
 body {
   font-family: "Ubuntu", serif;
 }
@@ -40,7 +41,6 @@ header {
 
 /* SPECIFIC STYLES */
 .headerContent {
-  height: 100vh;
   left: -100%;
   position: absolute;
   transition: all .5s;
@@ -120,6 +120,7 @@ header {
   }
 
   .headerContent {
+    box-shadow: 15px 0px 50px black;
     height: 100px;
     left: 0;
     position: relative;

@@ -25,9 +25,13 @@ a:hover {
   transition: .15s;
 }
 
+img {
+  vertical-align: middle;
+}
+
 /* SEMANTIC DEFAULTS */
 main {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 header {
@@ -36,7 +40,22 @@ header {
 
 /* SPECIFIC STYLES */
 .headerContent {
-  height: 100px;
+  height: 100vh;
+  left: -100%;
+  position: absolute;
+  transition: all .5s;
+  width: 100%;
+}
+
+.headerContent-show {
+  box-shadow: 15px 0px 50px black;
+  left: 0 !important;
+}
+
+#hamburger {
+  font-size: 48px;
+  position: absolute;
+  right: 0;
 }
 
 .bigCap {
@@ -52,9 +71,10 @@ header {
 }
 
 /* HELPERS + TACHYONS OVERWRITES */
+.bgc-white { background-color: #F2F3F7; }
 .bgc-primary { background-color: #1B415F; }
 .bgc-secondary { background-color: #000000; }
-.bgc-white { background-color: #F2F3F7; }
+.bgc-tertiary { background-color: #FFFFFF }
 .color-primary { color: #6F2EE8; }
 .color-secondary { color: #000000; }
 .color-tertiary { color: #FFFFFF; }
@@ -79,14 +99,34 @@ header {
   .bigCap {
     font-size: 6rem;
   }
+
+  .headerContent {
+    left: -480px;
+    width: 480px;
+  }
 }
 
 @media only screen and (min-width: 60rem) {
+  main {
+    margin-top: 100px;
+  }
+
   .mw75-l {
     max-width: 75%;
   }
 
   #signUpForm {
     width: 500px;
+  }
+
+  .headerContent {
+    height: 100px;
+    left: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  #hamburger {
+    display: none;
   }
 }

@@ -18,9 +18,9 @@
   <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 <body id="home" class="bgc-white">
-  <header class="fixed w-100 h-100 top-0 left-0 z-5">
+  <header class="fixed w-100 top-0 left-0 z-5">
     <i id="hamburger" class="ph-list z-999"></i>
-    <div class="headerContent h-100 bgc-white flex flex-column flex-row-l items-center justify-between">
+    <div class="headerContent bgc-white flex flex-column flex-row-l items-center justify-between">
       <a href="http://www.alyssacarrubbafit.com/">
         <img src="media/arc_fitness-logo.jpg" alt="Arc Fitness logo" width=100 />
       </a>
@@ -29,6 +29,11 @@
           <li class="ph3-l">
             <a href="#home" class="navLink color-secondary">
               Home
+            </a>
+          </li>
+          <li class="ph3-l">
+            <a href="#register" class="navLink color-secondary">
+              Sign Up
             </a>
           </li>
           <li class="ph3-l">
@@ -49,7 +54,15 @@
     <section class="flex justify-center items-center">
       <img src="./media/arc_fitness-hero.jpg" alt="">
     </section>
-    <section id="about" class="pv5 pv6-l">
+    <section id="register" class="pt5">
+      <div class="container flex flex-column items-center">
+        <h2 class="f3 pb3">Sign up for this weekend's class below and venmo <span class="purple b">@alyssa-carrubba</span> $15 to claim your spot</h2>
+        <!-- GOOGLE FORM EMBED -->
+        <!-- customized height to get rid of scrollbar -->
+        <iframe id="sign_up_form" src="https://docs.google.com/forms/d/e/1FAIpQLSc765WdZI-4iRAJTtjg-p4cd5i9dauhtDKQYL6dfryWYSGlbQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </section>
+    <section id="about" class="pv4 pb6-l pt4-l">
       <div class="container">
         <p class="ttc f4-ns tracked lh-copy">
           Hi, my name is Alyssa Carrubba and I am a fitness instructor, movement coach, and music enthusiast. By pairing compelling music with dynamic movement, I create an energetic atmosphere that allows students to feel powerful.
